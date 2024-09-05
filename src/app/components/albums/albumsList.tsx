@@ -187,7 +187,7 @@ export default function AlbumsList() {
       <AlbumListContainer>
         {albums.length === 0 ? (
           <>
-            <Loader count={5} />
+            <Loader count={1} />
           </>
         ) : (
           albums.map((album) => (

@@ -200,7 +200,7 @@ export default function UsersList() {
       <UserListContainer>
         {users.length === 0 ? (
           <>
-            <Loader count={5} />
+            <Loader count={1} />
           </>
         ) : (
           users.map((user) => (

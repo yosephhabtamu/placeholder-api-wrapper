@@ -16,7 +16,7 @@ const Loader = ({ count = 1 }) => (
   <LoaderContainer>
     {Array.from({ length: count }).map((_, index) => (
       <ContentLoader
-      key={index}
+        key={index}
         speed={2}
         width={400}
         height={24}
@@ -26,8 +26,15 @@ const Loader = ({ count = 1 }) => (
         style={{ width: "100%" }}
       >
         <rect x="1" y="3" rx="10" ry="10" width="calc(60%)" height="21" />
-        <rect x="calc(60% + 20px)" y="3" rx="10" ry="10" width="calc(20%)" height="21" />
-        <circle cx="calc(100% - 40px)" cy="14" r="10" />
+        <circle cx="calc(60% + 20px)" cy="14" r="10" />
+        <rect
+          x="calc( 100% - 40px)"
+          y="3"
+          rx="10"
+          ry="10"
+          width="calc(20%)"
+          height="21"
+        />
       </ContentLoader>
     ))}
   </LoaderContainer>
